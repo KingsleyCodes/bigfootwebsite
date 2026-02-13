@@ -38,7 +38,7 @@ export default function Home() {
           
           <p className="text-lg md:text-2xl text-emerald-200 font-medium max-w-2xl mx-auto mb-12 leading-relaxed opacity-90">
             Big Foot has emerged from the deep forest onto the Solana blockchain. 
-            Join the hunt for the <span className="text-lime-400 font-extrabold">$FOOT</span> airdrop.
+            {/* <span className="text-lime-400 font-extrabold">$FOOT</span> airdrop. */}
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 w-full max-w-md mx-auto mb-16">

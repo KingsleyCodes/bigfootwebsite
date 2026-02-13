@@ -99,7 +99,7 @@ export default function RoadmapPage() {
             JOIN THE <br />GEM HUNTERS.
           </h2>
           <p className="text-emerald-900 font-bold text-lg mb-10 max-w-xl mx-auto">
-            The $BIGFOOT Airdrop is live. 50,000,000 tokens are waiting for the first wave of trackers.
+            The $BIGFOOT Airdrop is live. 1,000,000,000 tokens are waiting for the first wave of trackers.
           </p>
         <a 
   href="https://t.me/bigfoothunterai" 
