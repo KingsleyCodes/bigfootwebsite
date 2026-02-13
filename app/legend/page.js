@@ -35,9 +35,12 @@ export default function LegendPage() {
       {/* FINAL CTA */}
       <div className="py-20 border-t border-emerald-800 text-center space-y-8">
         <h3 className="text-4xl font-black uppercase leading-tight">Ready to join the <br/>highest stakes hunt in history?</h3>
-        <Link href="/airdrop" className="inline-block bg-lime-400 text-emerald-950 font-black px-12 py-6 rounded-2xl text-2xl uppercase hover:scale-105 transition-all shadow-[0_0_50px_rgba(163,230,53,0.3)]">
+       <a 
+  href="https://t.me/bigfoothunterai" 
+  target="_blank" 
+  rel="noopener noreferrer"className="inline-block bg-lime-400 text-emerald-950 font-black px-12 py-6 rounded-2xl text-2xl uppercase hover:scale-105 transition-all shadow-[0_0_50px_rgba(163,230,53,0.3)]">
           Join the Airdrop 👣
-        </Link>
+        </a>
       </div>
     </div>
   );

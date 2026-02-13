@@ -1,10 +1,9 @@
 "use client"; 
 import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
-import Countdown from '@/components/Countdown';
+// import Countdown from '@/components/Countdown';
 import Tokenomics from '@/components/Tokenomics';
 import Roadmap from '@/components/Roadmap';
-import Footer from '@/components/Footer';
 import HowToBuy from '@/components/HowToBuy';
 import Community from '@/components/Community';
 import FAQ from '@/components/FAQ';
@@ -20,18 +19,9 @@ export default function Home() {
   if (!mounted) return <div className="min-h-screen bg-emerald-950" />;
 
   return (
-    <div className="min-h-screen bg-emerald-950 text-white selection:bg-lime-400 overflow-x-hidden relative">
+    <div className="min-h-screen text-white selection:bg-lime-400 overflow-x-hidden relative">
       
-      {/* 1. FIXED FOREST BACKGROUND LAYER */}
-      <div 
-        className="fixed inset-0 z-0 opacity-20 pointer-events-none bg-no-repeat bg-cover bg-center transition-opacity duration-1000"
-        style={{ backgroundImage: "url('/forest-bg.webp')" }} 
-      />
-
-      {/* 2. VIGNETTE OVERLAY */}
-      <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-b from-emerald-950 via-transparent to-emerald-950" />
-
-      <Navbar />
+      {/* Note: Navbar, Footer, and Background are now handled in layout.js to prevent duplication */}
 
       <main className="relative z-10">
         
@@ -52,24 +42,26 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 w-full max-w-md mx-auto mb-16">
-            <Link 
-              href="/airdrop" 
+            <a 
+              href="https://t.me/bigfoothunterai" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="flex-1 bg-lime-400 text-emerald-950 font-black py-5 rounded-2xl hover:bg-white transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(163,230,53,0.4)] uppercase tracking-tight text-lg text-center"
             >
               Join the Hunt
-            </Link>
+            </a>
             <Link 
-              href="#tokenomics" 
+              href="/tokenomics" 
               className="flex-1 bg-emerald-900/40 backdrop-blur-md border border-emerald-700 font-black py-5 rounded-2xl hover:bg-emerald-800 transition-all uppercase tracking-tight text-lg text-center"
             >
               Tokenomics
             </Link>
           </div>
 
-          <div className="w-full max-w-3xl mx-auto">
+          {/* <div className="w-full max-w-3xl mx-auto">
             <p className="text-[10px] font-black text-emerald-500 uppercase tracking-[0.5em] mb-6 text-center">Airdrop Final Countdown</p>
             <Countdown />
-          </div>
+          </div> */}
         </section>
 
         {/* ABOUT SECTION */}
@@ -109,8 +101,6 @@ export default function Home() {
         <FAQ />
 
       </main>
-
-      <Footer />
     </div>
   );
 }

@@ -7,7 +7,10 @@ export default function Community() {
             <h2 className="text-5xl font-black uppercase leading-none mb-6 italic">Join the <br />Wilderness</h2>
             <p className="max-w-md font-bold text-lg opacity-80">Thousands of hunters are already tracking $FOOT. Don't get left in the dark.</p>
           </div>
-          <a href="https://t.me/bigfoothunterai" className="mt-8 bg-emerald-950 text-white w-fit px-8 py-4 rounded-2xl font-black uppercase hover:scale-105 transition-transform">
+          <a 
+  href="https://t.me/bigfoothunterai" 
+  target="_blank" 
+  rel="noopener noreferrer" className="mt-8 bg-emerald-950 text-white w-fit px-8 py-4 rounded-2xl font-black uppercase hover:scale-105 transition-transform">
             Enter Telegram
           </a>
           <span className="absolute -bottom-10 -right-10 text-[200px] opacity-10 group-hover:rotate-12 transition-transform">👣</span>

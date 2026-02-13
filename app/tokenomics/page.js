@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function TokenomicsPage() {
   const stats = [
-    { label: "Total Supply", val: "1,000,000,000", sub: "Hard Capped" },
+    { label: "Total Supply", val: "50,000,000", sub: "Hard Capped" },
     { label: "Burn Rate", val: "2%", sub: "On every sighting (swap)" },
     { label: "Community", val: "80%", sub: "Liquidity + Airdrop" },
     { label: "Marketing", val: "20%", sub: "Locked for Hunt Promo" }
@@ -37,9 +37,12 @@ export default function TokenomicsPage() {
       {/* FINAL CTA */}
       <div className="bg-lime-400 p-16 rounded-[60px] text-emerald-950 text-center space-y-8">
         <h2 className="text-5xl font-black uppercase leading-none italic">Secure your stake <br/>before the beast vanishes.</h2>
-        <Link href="/airdrop" className="inline-block bg-emerald-950 text-white font-black px-12 py-6 rounded-2xl text-xl uppercase hover:bg-black transition-all">
+       <a 
+  href="https://t.me/bigfoothunterai" 
+  target="_blank" 
+  rel="noopener noreferrer" className="inline-block bg-emerald-950 text-white font-black px-12 py-6 rounded-2xl text-xl uppercase hover:bg-black transition-all">
           Claim My Airdrop Tokens
-        </Link>
+        </a>
       </div>
     </div>
   );

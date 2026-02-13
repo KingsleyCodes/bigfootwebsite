@@ -5,10 +5,13 @@ import Link from 'next/link';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // REPLACE THIS with your actual filename in the /public folder
+  const whitePaperPath = "/whitepaper.pdf"; 
+
   return (
     <nav className="fixed w-full z-50 bg-emerald-950/80 backdrop-blur-md border-b border-emerald-800">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* IMAGE LOGO REPLACEMENT */}
+        {/* IMAGE LOGO */}
         <Link href="/" className="hover:opacity-80 transition-opacity">
           <img 
             src="/logo.png" 
@@ -22,9 +25,23 @@ export default function Navbar() {
           <Link href="/legend" className="hover:text-lime-400 transition-colors">The Legend</Link>
           <Link href="/tokenomics" className="hover:text-lime-400 transition-colors">Foot-Nomics</Link>
           <Link href="/roadmap" className="hover:text-lime-400 transition-colors">Roadmap</Link>
-          <Link href="/airdrop" className="bg-lime-400 text-emerald-950 px-5 py-2.5 rounded-full hover:bg-white transition-all transform hover:scale-105 active:scale-95">
+          
+          {/* WHITE PAPER LINK (Desktop) */}
+          <a 
+            href={whitePaperPath}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-lime-400 transition-colors cursor-pointer"
+          >
+            White Paper
+          </a>
+
+         <a 
+  href="https://t.me/bigfoothunterai" 
+  target="_blank" 
+  rel="noopener noreferrer" className="bg-lime-400 text-emerald-950 px-5 py-2.5 rounded-full hover:bg-white transition-all transform hover:scale-105 active:scale-95">
             Join Airdrop
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -39,7 +56,21 @@ export default function Navbar() {
           <Link href="/legend" onClick={() => setIsOpen(false)}>The Legend</Link>
           <Link href="/tokenomics" onClick={() => setIsOpen(false)}>Foot-Nomics</Link>
           <Link href="/roadmap" onClick={() => setIsOpen(false)}>Roadmap</Link>
-          <Link href="/airdrop" onClick={() => setIsOpen(false)} className="text-lime-400 border border-lime-400 py-3 rounded-xl">Join Airdrop</Link>
+          
+          {/* WHITE PAPER LINK (Mobile) */}
+          <a 
+            href={whitePaperPath}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="hover:text-lime-400 transition-colors"
+          >
+            White Paper
+          </a>
+
+          <Link href="/airdrop" onClick={() => setIsOpen(false)} className="text-lime-400 border border-lime-400 py-3 rounded-xl">
+            Join Airdrop
+          </Link>
         </div>
       )}
     </nav>
