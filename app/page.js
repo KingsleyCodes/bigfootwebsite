@@ -6,6 +6,7 @@ import Tokenomics from '@/components/Tokenomics';
 import Roadmap from '@/components/Roadmap';
 import HowToBuy from '@/components/HowToBuy';
 import Community from '@/components/Community';
+import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Link from 'next/link';
 
@@ -106,6 +107,8 @@ export default function Home() {
 
         {/* COMMUNITY & SOCIAL PROOF */}
         <Community />
+
+        <Testimonials />
 
         {/* FREQUENTLY ASKED QUESTIONS */}
         <FAQ />
