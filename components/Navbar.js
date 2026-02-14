@@ -26,6 +26,9 @@ export default function Navbar() {
           <Link href="/tokenomics" className="hover:text-lime-400 transition-colors">Foot-Nomics</Link>
           <Link href="/roadmap" className="hover:text-lime-400 transition-colors">Roadmap</Link>
           
+          {/* TEAM LINK */}
+          <Link href="/team" className="hover:text-lime-400 transition-colors">Team</Link>
+          
           {/* WHITE PAPER LINK (Desktop) */}
           <a 
             href={whitePaperPath}
@@ -36,10 +39,12 @@ export default function Navbar() {
             White Paper
           </a>
 
-         <a 
-  href="https://t.me/bigfoothunterai" 
-  target="_blank" 
-  rel="noopener noreferrer" className="bg-lime-400 text-emerald-950 px-5 py-2.5 rounded-full hover:bg-white transition-all transform hover:scale-105 active:scale-95">
+          <a 
+            href="https://t.me/bigfoothunterai" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-lime-400 text-emerald-950 px-5 py-2.5 rounded-full hover:bg-white transition-all transform hover:scale-105 active:scale-95"
+          >
             Join Airdrop
           </a>
         </div>
@@ -56,6 +61,9 @@ export default function Navbar() {
           <Link href="/legend" onClick={() => setIsOpen(false)}>The Legend</Link>
           <Link href="/tokenomics" onClick={() => setIsOpen(false)}>Foot-Nomics</Link>
           <Link href="/roadmap" onClick={() => setIsOpen(false)}>Roadmap</Link>
+          
+          {/* TEAM LINK (Mobile) */}
+          <Link href="/team" onClick={() => setIsOpen(false)}>Team</Link>
           
           {/* WHITE PAPER LINK (Mobile) */}
           <a 

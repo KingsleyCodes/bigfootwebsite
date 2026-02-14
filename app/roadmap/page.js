@@ -50,7 +50,7 @@ export default function RoadmapPage() {
       </div>
 
       {/* Core Project Specs Card */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
         <div className="bg-emerald-900/30 border border-emerald-800 p-8 rounded-3xl">
           <h3 className="text-lime-400 font-black uppercase text-xs tracking-widest mb-4">Core Technology</h3>
           <p className="text-white font-bold text-lg leading-snug">AI Oracle scanning Solana, BSC & ETH for high-potential on-chain gems.</p>
@@ -63,6 +63,38 @@ export default function RoadmapPage() {
         <div className="bg-emerald-900/30 border border-emerald-800 p-8 rounded-3xl">
           <h3 className="text-lime-400 font-black uppercase text-xs tracking-widest mb-4">Utility Highlights</h3>
           <p className="text-white text-sm">Premium Access • Staking • Governance • 1% Deflationary Burn</p>
+        </div>
+      </div>
+
+      {/* NEW UTILITY SECTION */}
+      <div className="mb-32 bg-emerald-900/20 border border-emerald-800 p-8 md:p-12 rounded-[40px] backdrop-blur-md">
+        <h2 className="text-3xl md:text-5xl font-black uppercase italic text-white mb-8">
+          The BigFoot Gem Hunter <span className="text-lime-400">Utility</span>
+        </h2>
+        <p className="text-emerald-100/80 text-lg mb-10 leading-relaxed">
+          At the core of BigFoot is the Gem Hunter bot—a state-of-the-art AI oracle that scans blockchains for undervalued tokens and emerging trends. Key features include:
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="space-y-2">
+            <h4 className="text-lime-400 font-black uppercase text-sm tracking-wider">Multi-Chain Analytics</h4>
+            <p className="text-emerald-100/60 text-sm">Seamless monitoring of Solana, Ethereum, and BSC for live data on transactions, liquidity, and market sentiment.</p>
+          </div>
+          <div className="space-y-2">
+            <h4 className="text-lime-400 font-black uppercase text-sm tracking-wider">Alpha Detection</h4>
+            <p className="text-emerald-100/60 text-sm">Advanced algorithms identify "alpha" opportunities—hidden gems with high growth potential—before they gain mainstream attention.</p>
+          </div>
+          <div className="space-y-2">
+            <h4 className="text-lime-400 font-black uppercase text-sm tracking-wider">Real-Time Alerts</h4>
+            <p className="text-emerald-100/60 text-sm">Customizable notifications delivered via integrated platforms, ensuring you never miss a critical market move.</p>
+          </div>
+          <div className="space-y-2">
+            <h4 className="text-lime-400 font-black uppercase text-sm tracking-wider">Risk Assessment Tools</h4>
+            <p className="text-emerald-100/60 text-sm">Built-in metrics to evaluate token viability, including smart contract audits, holder distribution, and volatility indicators.</p>
+          </div>
+          <div className="md:col-span-2 pt-4">
+            <h4 className="text-lime-400 font-black uppercase text-sm tracking-wider mb-2">User-Friendly Interface</h4>
+            <p className="text-emerald-100/60 text-sm italic">Intuitive dashboard for tracking portfolios, simulating trades, and collaborating with the community. Whether you're a gem hunter seeking the next big breakthrough or a strategic investor building long-term positions, the BigFoot Gem Hunter provides the precision and speed required in today's fast-paced crypto environment.</p>
+          </div>
         </div>
       </div>
 
@@ -101,16 +133,15 @@ export default function RoadmapPage() {
           <p className="text-emerald-900 font-bold text-lg mb-10 max-w-xl mx-auto">
             The $BIGFOOT Airdrop is live. 1,000,000,000 tokens are waiting for the first wave of trackers.
           </p>
-        <a 
-  href="https://t.me/bigfoothunterai" 
-  target="_blank" 
-  rel="noopener noreferrer"
+          <a 
+            href="https://t.me/bigfoothunterai" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="inline-block bg-emerald-950 text-white font-black px-12 py-6 rounded-2xl text-xl uppercase hover:scale-105 transition-transform"
           >
             Claim My Airdrop
           </a>
         </div>
-        {/* Decorative background element */}
         <span className="absolute -bottom-10 -right-10 text-[300px] opacity-10 pointer-events-none select-none">🚀</span>
       </div>
     </div>

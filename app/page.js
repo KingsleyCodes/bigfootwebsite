@@ -26,22 +26,32 @@ export default function Home() {
       <main className="relative z-10">
         
         {/* HERO SECTION */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-24 text-center">
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-32 pb-20 text-center">
           <div className="inline-block animate-bounce mb-8">
             <span className="text-7xl md:text-9xl drop-shadow-[0_0_30px_rgba(163,230,53,0.6)]">👣</span>
           </div>
           
-          <h1 className="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-6">
-            THE LEGEND <br />
-            <span className="text-lime-400 italic">IS ALIVE.</span>
-          </h1>
+          <div className="mb-6">
+            <h2 className="text-lime-400 font-black uppercase tracking-[0.3em] text-sm md:text-base mb-2">
+              Welcome to BigFoot Tech
+            </h2>
+            <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-4">
+              THE LEGEND <br />
+              <span className="text-lime-400 italic">IS ALIVE.</span>
+            </h1>
+            <p className="text-emerald-500 font-bold uppercase tracking-widest text-xs md:text-sm">
+              Discover the Future of Crypto Discovery
+            </p>
+          </div>
           
-          <p className="text-lg md:text-2xl text-emerald-200 font-medium max-w-2xl mx-auto mb-12 leading-relaxed opacity-90">
-            Big Foot has emerged from the deep forest onto the Solana blockchain. 
-            {/* <span className="text-lime-400 font-extrabold">$FOOT</span> airdrop. */}
+          <p className="text-lg md:text-xl text-emerald-100/80 font-medium max-w-3xl mx-auto mb-12 leading-relaxed px-6">
+            BigFoot Tech is at the forefront of innovative blockchain analytics, empowering users with advanced 
+            AI-driven tools to uncover high-potential cryptocurrency opportunities. Our flagship utility, the 
+            <span className="text-lime-400 font-bold"> BigFoot Gem Hunter</span>, is designed to revolutionize how 
+            investors identify and capitalize on emerging gems across major blockchains.
           </p>
 
-          <div className="flex flex-col md:flex-row gap-4 w-full max-w-md mx-auto mb-16">
+          <div className="flex flex-col md:flex-row gap-4 w-full max-w-md mx-auto mb-16 px-6">
             <a 
               href="https://t.me/bigfoothunterai" 
               target="_blank" 
@@ -58,7 +68,7 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* <div className="w-full max-w-3xl mx-auto">
+          {/* <div className="w-full max-w-3xl mx-auto px-6">
             <p className="text-[10px] font-black text-emerald-500 uppercase tracking-[0.5em] mb-6 text-center">Airdrop Final Countdown</p>
             <Countdown />
           </div> */}
